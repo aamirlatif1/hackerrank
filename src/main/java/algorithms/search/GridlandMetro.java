@@ -1,10 +1,10 @@
-package search;
+package algorithms.search;
 
 import java.util.*;
 
 public class GridlandMetro {
 
-    static int freeCells(List<int[]> row, long m){
+    private static int freeCells(List<int[]> row, long m){
         int i = 0;
         row.sort((o1, o2) -> o1[0] - o2[0]);
         Stack<int[]> stack = new Stack<>();
@@ -53,7 +53,7 @@ public class GridlandMetro {
             if(tm.containsKey(value)) {
                 tm.get(value).add(track);
             } else{
-                List<int[]> list = new ArrayList<int[]>();
+                List<int[]> list = new ArrayList<>();
                 list.add(track);
                 tm.put(value, list);
             }

@@ -1,4 +1,4 @@
-package search;
+package algorithms.search;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -11,12 +11,12 @@ public class MinimumLoss {
         int year;
         long price;
 
-        public Price(int year, long price) {
+        Price(int year, long price) {
             this.year = year;
             this.price = price;
         }
 
-        public long getPrice() {
+        long getPrice() {
             return price;
         }
     }

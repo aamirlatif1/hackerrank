@@ -1,4 +1,4 @@
-package search;
+package algorithms.search;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class IceCreamParlor {
 
-    static void findPair(int[] arr, int m){
+    private static void findPair(int[] arr, int m){
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < arr.length; i++){
             int temp = m - arr[i];

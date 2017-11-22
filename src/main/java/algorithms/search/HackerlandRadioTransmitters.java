@@ -1,11 +1,11 @@
-package search;
+package algorithms.search;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class HackerlandRadioTransmitters {
 
-    static int requiredTransmitters(int[] arr, int k) {
+    private static int requiredTransmitters(int[] arr, int k) {
         int count = 0;
         Arrays.sort(arr);
         int i = 0;
